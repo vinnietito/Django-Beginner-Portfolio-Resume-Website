@@ -1,10 +1,19 @@
-div#profile-wrapper {
+body{
+    background-color: #F8F8F8!important;
+}
+
+#profile-wrapper{
     text-align: center;
 }
 
-div#profile-wrapper img#profile-pic {
+#profile-pic{
     width: 150px;
     height: 150px;
     border-radius: 50%;
     margin-right: auto;
+}
+
+ulr{
+    padding: 0;
+    list-style-type: none;
 }
