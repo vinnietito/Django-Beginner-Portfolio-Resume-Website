@@ -15,11 +15,30 @@
      <style>
         body{
             background-color: #F8F8F8!important;
+            line-height: 1.6;
+            font-family: 'Arial', sans-serif;
         }
+
+        h4, h5 {
+            font-weight: bold;
+            color: #333; /* Dark color for headings */
+            margin-bottom: 15px; /* Space below headings */
+        }
+
+
         #profile-wrapper {
             text-align: center;
             border: 2px solid rgb(0, 255, 76); /* Debugging style */
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+            border-radius: 10px;
         }
+
+
+        #profile-wrapper h4 {
+            font-size: 1.8em;
+            color: #27ae60; /* Accent color */
+        }
+
     
         #profile-pic {
             width: 150px;
@@ -28,15 +47,35 @@
             margin-right: auto;
             border: 5px solid green; /* Debugging style */
         }
-        .social-links ul, li{
-            list-style-type: none;
-            display: inline-block;
-            
+        .social-links ul {
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center; /* Center social icons */
         }
-        .social{
-            width: 30px;
-            height: 30px;
+
+        .social-links li {
+            margin: 0 10px; /* Add spacing between icons */
         }
+
+        .social-links img {
+            width: 40px; /* Slightly bigger icons */
+            height: 40px;
+            transition: transform 0.3s ease; /* Smooth hover effect */
+        }
+
+        .social-links img:hover {
+            transform: scale(1.1); /* Slightly enlarge icons on hover */
+        }
+
+        .footer {
+            text-align: center;
+            padding: 20px 0;
+            background-color: #f8f9fa;
+            color: #333;
+            font-size: 0.9em;
+        }
+
     </style>
     
 
@@ -44,7 +83,7 @@
 <body>
     <div class="container">
         <div class="row">
-            <div class="col-md-3">
+            <div class="col-md-3 col-12">
                 <div class="card card-body h-100" id="profile-wrapper">
                     <img id="profile-pic" src="{% static 'images/Sheila.JPEG' %}" alt="">
                     <br>
@@ -52,7 +91,7 @@
                     <p>I love coding, doing research and collaborating</p>
                 </div>
             </div>
-            <div class="col-md-9">
+            <div class="col-md-9 col-12">
                 <div class="card card-body" id="profile-wrapper h-100">
                     <h4>My First Job as a Developer</h4>
                     <br>
@@ -72,7 +111,11 @@
                             <li><a href="https://www.facebook.com/vinie.tito.1/" target="_blank"><img class="social" src="{% static 'images/facebook.JPEG' %}" alt="Facebook"></a></li>
                             <li><a href="https://x.com/parody_vin" target="_blank"><img class="social" src="{% static 'images/twitter.JPEG' %}" alt="Twitter"></a></li>
                             <li><a href="https://www.linkedin.com/in/vincent-kimanthi-58ba99207/" target="_blank"><img class="social" src="{% static 'images/linkedin.JPEG' %}" alt="LinkedIn"></a></li>
-                            <li><a href="https://www.linkedin.com/in/vincent-kimanthi-58ba99207/" target="_blank"><img class="social" src="{% static 'images/email.JPEG' %}" alt="Email"></a></li>
+                            <li><a href="mailto:vincentnjuguna69@gmail.com" target="_blank"><img class="social" src="{% static 'images/email.JPEG' %}" alt="Email"></a></li>
+
+                            <p>Feel free to reach out to me at <a href="mailto:vincentnjuguna69@gmail.com">vincentnjuguna69@gmail.com</a></p>
+
+                              
                         </ul>
                         
                 </div>
@@ -142,6 +185,9 @@
             </div>
         </div>
         <br>
+    </div>
+    <div class="footer">
+        <p>&copy; 2024 Vincent Kimanthi. All rights reserved.</p>
     </div>
     
 </body>
