@@ -34,8 +34,8 @@
             
         }
         .social{
-            width: 20px;
-            height: 20px;
+            width: 30px;
+            height: 30px;
         }
     </style>
     
@@ -45,7 +45,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-3">
-                <div class="card card-body" id="profile-wrapper">
+                <div class="card card-body h-100" id="profile-wrapper">
                     <img id="profile-pic" src="{% static 'images/Sheila.JPEG' %}" alt="">
                     <br>
                     <h4>Hi I'm Sheila!</h4>
@@ -53,7 +53,7 @@
                 </div>
             </div>
             <div class="col-md-9">
-                <div class="card card-body" id="profile-wrapper">
+                <div class="card card-body" id="profile-wrapper h-100">
                     <h4>My First Job as a Developer</h4>
                     <br>
                     <p>It was was a transformative experience that marked the 
@@ -68,18 +68,19 @@
                          problem-solving, and continuous learning. It laid a solid foundation for my career as a developer.</p>
 
                          <ul class="social-links">
-                            <li><img class="social" src="{% static 'images/insta.JPEG' %}" alt=""></li>
-                            <li><img class="social" src="{% static 'images/facebook.JPEG' %}" alt=""></li>
-                            <li><img class="social" src="{% static 'images/twitter.JPEG' %}" alt=""></li>
-                            <li><img class="social" src="{% static 'images/linkedin.JPEG' %}" alt=""></li>
-                         </ul>
+                            <li><a href="https://www.instagram.com/yourusername" target="_blank"><img class="social" src="{% static 'images/insta.JPEG' %}" alt="Instagram"></a></li>
+                            <li><a href="https://www.facebook.com/yourusername" target="_blank"><img class="social" src="{% static 'images/facebook.JPEG' %}" alt="Facebook"></a></li>
+                            <li><a href="https://twitter.com/yourusername" target="_blank"><img class="social" src="{% static 'images/twitter.JPEG' %}" alt="Twitter"></a></li>
+                            <li><a href="https://www.linkedin.com/in/yourusername" target="_blank"><img class="social" src="{% static 'images/linkedin.JPEG' %}" alt="LinkedIn"></a></li>
+                        </ul>
+                        
                 </div>
             </div>
         </div>
         <br>
         <div class="row">
             <div class="col-md-6">
-                <div class="card card-body">
+                <div class="card card-body h-100">
                     <h5>My Experience as a Developer</h5>
                     <br>
                     <p>has been a journey of continuous growth, learning, and innovation. Over time, I have honed my skills in 
@@ -93,7 +94,7 @@
                 </div>
             </div>
             <div class="col-md-6">
-                <div class="card card-body">
+                <div class="card card-body h-100">
                     <h5>What I Know</h5>
                     <br>
                     <p>Over the course of my learning and experience, I have developed a strong foundation in both front-end and 
@@ -110,7 +111,7 @@
         <br>
         <div class="row">
             <div class="col-md-6">
-                <div class="card card-body">
+                <div class="card card-body h-100">
                     <h5>How i Learn</h5>
                     <br>
                     <p>My learning process as a developer is rooted in curiosity, persistence, and a hands-on approach. 
@@ -120,10 +121,13 @@
                     <p>I believe in learning by doing. I apply concepts immediately by building small projects or solving real-world 
                         problems. This approach helps me understand how things work in practical scenarios, reinforcing my knowledge 
                         through experience.</p>
+                    <p>Collaboration is another key aspect of how I learn. Engaging with fellow developers through forums, hackathons, 
+                        and open-source projects exposes me to different perspectives and best practices. Asking questions, seeking 
+                        feedback, and participating in discussions have greatly enriched my understanding.</p>
                 </div>
             </div>
             <div class="col-md-6">
-                <div class="card card-body">
+                <div class="card card-body h-100">
                     <h5>My Short-Term Goals</h5>
                     <br>
                     <p><h4>1. Enhance My Technical Skills</h4>I aim to deepen my understanding of key technologies, particularly
